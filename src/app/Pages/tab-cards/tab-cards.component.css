@@ -1,0 +1,115 @@
+a {
+  text-decoration: none;
+}
+
+.card-img-top {
+  transition: 0.5s;
+  border-radius: 8px;
+  max-height: 150px;
+}
+
+.img_container {
+  overflow: hidden;
+  padding: 3px;
+}
+
+.col .card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.module {
+  position: relative;
+}
+
+.module::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../../../assets/image/bg.png") 100vh 100%;
+  filter: opacity(0.2);
+}
+.module section {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.title-tabs {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  margin: 3rem auto 2rem 0;
+  font-weight: bold;
+}
+
+.col .card {
+  border: none;
+  box-shadow: 3px 3px 10px #4c4c4c85;
+}
+
+.card-body div {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+h5 {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.card-body div img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.card-body div span {
+  color: rgb(255 203 43);
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.description img {
+  width: 12px;
+  margin-right: 4px;
+}
+
+.row {
+    margin: 1rem 0.1rem;
+}
+
+::ng-deep .mat-tab-header .mat-tab-label {
+    margin-left: auto;
+}
+
+::ng-deep .mat-mdc-tab-header {
+    width: 60%;
+    margin-left: auto;
+}
+
+
+.arrow {
+    transition: 0.5s;
+    transform: scale(0);
+    margin-left: auto;
+}
+    
+.card:hover .arrow {
+    transform: scale(1);
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.3);
+}
